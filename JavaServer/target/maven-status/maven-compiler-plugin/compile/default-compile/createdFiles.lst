@@ -1,0 +1,8 @@
+Main\Item.class
+Main\Server.class
+api\ItemResource.class
+Main\ItemFilter.class
+api\UserResource.class
+Main\DBConnection.class
+api\UserResource$AuthRequest.class
+api\UserResource$AuthResponse.class

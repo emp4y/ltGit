@@ -1,0 +1,28 @@
+use test;
+
+CREATE TABLE items_found (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    floor INT,
+    location VARCHAR(255),
+    found_by INT,
+    commission DECIMAL(10, 2)
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL
+);
+
+INSERT INTO users (username, password_hash) VALUES
+('alice', 'password123'),
+('bob', 'qwerty456');
+
+INSERT INTO items_found (name, floor, location, found_by, commission) VALUES
+('Black Wallet', 7, '706', 1, 20.00),
+('Umbrella', 7, '708', 2, 5.50);
+
+select  from users;
+select  from items_found;
+
